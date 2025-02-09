@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.user.syn</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>-c</string>
+        <!-- <string>/usr/bin/env</string> -->
+        <!-- <string>python3</string> -->
+        <!-- <string>/Users/ay/Library/Group Containers/UBF8T346G9.com.microsoft.to-do-mac/AccountData/store_myday.py</string> -->
+        <!-- <string>"/usr/bin/env python3 \"/Users/ay/Library/Group Containers/UBF8T346G9.com.microsoft.to-do-mac/AccountData/store_myday.py\""</string> -->
+        <string>"/usr/bin/python3 /Users/ay/Documents/MyScripts/store_myday.py"</string>
+    </array>
+
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>16</integer>
+        <key>Minute</key>
+        <integer>53</integer>
+    </dict>
+
+    <key>RunAtLoad</key>
+    <true/>
+
+    <key>StandardOutPath</key>
+    <string>/tmp/com.user.syn.stdout.log</string>
+
+    <key>StandardErrorPath</key>
+    <string>/tmp/com.user.syn.stderr.log</string>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+    </dict>
+</dict>
+</plist>
